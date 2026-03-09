@@ -30,5 +30,3 @@ export async function login(user) {
     console.error("Error al hacer signin:", err.message);
   }
 }
-
-login(FARTO);
