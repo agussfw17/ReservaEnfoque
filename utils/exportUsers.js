@@ -13,3 +13,5 @@ export const users = JSON.parse(rawData);
 export const YO = users.YO;
 export const PABLO_BOLLA = users.PABLO_BOLLA;
 export const FARTO = users.FARTO;
+export const LODEIRO = users.LODEIRO;
+
