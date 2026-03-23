@@ -1,5 +1,3 @@
-import { YO, PABLO_BOLLA } from "../utils/exportUsers.js";
-
 export async function login(user) {
   const URL_LOGIN = process.env.URL_LOGIN;
 

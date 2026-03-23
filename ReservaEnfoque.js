@@ -7,7 +7,7 @@ import { YO, PABLO_BOLLA, FARTO, LODEIRO } from "./utils/exportUsers.js";
 import dotenv from "dotenv";
 dotenv.config();
 
-const { id, token } = await login(LODEIRO);
+const { id, token } = await login(DELFI);
 
 console.log("id: ", id);
 console.log("token: ", token);
