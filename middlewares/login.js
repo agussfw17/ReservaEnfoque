@@ -5,6 +5,7 @@ export async function login(user) {
     user: user.email,
     password: user.password,
   };
+
   try {
     const res = await fetch(URL_LOGIN, {
       method: "PUT",
@@ -15,6 +16,7 @@ export async function login(user) {
     });
 
     if (!res.ok) {
+      const errorBody = await res.text();
       throw new Error(`HTTP error! status: ${res.status}`);
     }
 
