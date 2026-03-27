@@ -2,7 +2,14 @@ import { login } from "./middlewares/login.js";
 import { activityCategory } from "./middlewares/activityCategory.js";
 import { activityTime } from "./middlewares/activityTime.js";
 
-import { YO, PABLO_BOLLA, FARTO, LODEIRO, DELFI } from "./utils/exportUsers.js";
+import {
+  YO,
+  PABLO_BOLLA,
+  FARTO,
+  LODEIRO,
+  DELFI,
+  ANA,
+} from "./utils/exportUsers.js";
 
 import dotenv from "dotenv";
 dotenv.config();
