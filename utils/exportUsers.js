@@ -15,3 +15,4 @@ export const PABLO_BOLLA = users.PABLO_BOLLA;
 export const FARTO = users.FARTO;
 export const LODEIRO = users.LODEIRO;
 export const DELFI = users.DELFI;
+export const ANA = users.ANA;
