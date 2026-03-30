@@ -9,12 +9,13 @@ import {
   LODEIRO,
   DELFI,
   ANA,
+  JP,
 } from "./utils/exportUsers.js";
 
 import dotenv from "dotenv";
 dotenv.config();
 
-const { id, token } = await login(ANA);
+const { id, token } = await login(JP);
 
 console.log("id: ", id);
 console.log("token: ", token);
