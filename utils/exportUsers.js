@@ -17,3 +17,4 @@ export const LODEIRO = users.LODEIRO;
 export const DELFI = users.DELFI;
 export const ANA = users.ANA;
 export const JP = users.JP;
+export const FIO = users.FIO;
