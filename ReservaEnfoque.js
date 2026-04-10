@@ -11,12 +11,13 @@ import {
   ANA,
   JP,
   FIO,
+  LUCAS,
 } from "./utils/exportUsers.js";
 
 import dotenv from "dotenv";
 dotenv.config();
 
-const { id, token } = await login(FIO);
+const { id, token } = await login(LUCAS);
 
 console.log("id: ", id);
 console.log("token: ", token);
