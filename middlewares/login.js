@@ -1,26 +1,14 @@
+import axios from "axios";
+
 export async function login(user) {
-  const URL_LOGIN = process.env.URL_LOGIN;
-
-  const payload = {
-    user: user.email,
-    password: user.password,
-  };
-
   try {
-    const res = await fetch(URL_LOGIN, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
+    const payload = {
+      user: user.email,
+      password: user.password,
+    };
 
-    if (!res.ok) {
-      const errorBody = await res.text();
-      throw new Error(`HTTP error! status: ${res.status}`);
-    }
-
-    const data = await res.json();
+    const res = await axios.put(`${process.env.URL_BASE}/signin`, payload);
+    const data = res.data;
 
     const token = data.token;
     const id = data.description.id;

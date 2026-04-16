@@ -1,20 +1,26 @@
+import axios from "axios";
+
 export async function activityCategory(token) {
-    const res = await fetch(process.env.URL_CATEGORY, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-    });
-    
-    if (!res.ok) {
-        throw new Error(`HTTP error! status: ${res.status}`);
-    }
+    try {
+        const res = await axios.get(`${process.env.URL_BASE}/activitycategory/?from=FRONTEND`, {
+            headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+            },
+        });
+        
+        const data = res.data;
+        
+        if (!data) {
+            throw new Error(`HTTP error! status: ${data.status}`);
+        }
 
-    const data = await res.json();
+        const deporte    = data.description.find(d => d.name === "Deportes");
 
-    const deporte = data.description.find(d => d.name === "Deportes");
-
-    const deporteId = deporte ? deporte.id : null;
-    return deporteId;
-}
+        const deporteId = deporte ? deporte.id : null;
+        return deporteId;
+    }catch (err) {
+        console.error('Error en getActivityCategory:', err.message);
+        throw err;
+    }   
+}  

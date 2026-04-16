@@ -5,12 +5,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const usersPath = path.join(__dirname, "users.json");
+const usersPath = path.join(__dirname, "weekUsers.json");
 const rawData = fs.readFileSync(usersPath, "utf-8");
 
-export const users = JSON.parse(rawData);
-
-export async function getUser(name) {
-    const user = users.find((u) => u.name === name);
-    return user;
-}
+export const weekUsers = JSON.parse(rawData);

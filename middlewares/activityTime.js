@@ -1,32 +1,15 @@
-export async function activityTime(token, userId, activityId) {
+import axios from "axios";
+
+export async function activityTime(token, userId, activityId, dow) {
   try {
-
-    console.log('token',token);
-    console.log('userId',userId);
-    console.log('activityId',activityId);
-
-    const now = new Date();
-    const dow = now.getDay();
-
-    const URL_TIME = process.env.URL_TIME
-    console.log('URL_TIME',URL_TIME);
-
-    const url = process.env.URL_TIME
-      .replace('{id}', activityId)
-      .replace('{dow}', dow)
-      .replace('{userId}', userId);
-
-    console.log('url',url);
-    
-    const res = await fetch(url, {
+    const res = await axios.get(`${process.env.URL_BASE}/activitytime/?id=${activityId}&dow=${dow}&userId=${userId}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       }
     });
 
-    const data = await res.json();
-    
+    const data = res.data;
    
     const volley = data.description.find(
         d => d.name === 'Volley Intermedio/Avanzado'

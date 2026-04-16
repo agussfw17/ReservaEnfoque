@@ -1,38 +1,47 @@
-{
-  "YO": {
+[
+  {
+    "name": "AGUS",
     "email": "agusfw17@gmail.com",
     "password": "1998174a"
   },
-  "PABLO_BOLLA": {
+  {
+    "name": "PABLO_BOLLA",
     "email": "bollapablo@gmail.com",
     "password": "Bohemios6"
   },
-  "FARTO": {
+  {
+    "name": "FARTO",  
     "email": "fartochristian@gmail.com",
     "password": "Christian90"
   },
-  "LODEIRO": {
+  {
+    "name": "LODEIRO",
     "email": "lodeiroagustina@gmail.com",
     "password": "aguslodeiro2002"
   },
-  "DELFI": {
+  {
+    "name": "DELFI",
     "email": "castillo.clinica@gmail.com",
     "password": "55762704"
   },
-  "ANA": {
+  {
+    "name": "ANA",
     "email": "anittaaaa90@gmail.com",
     "password": "165408"
   },
-  "JP": {
+  {
+    "name": "JP",
     "email": "jantunez@gmail.com",
     "password": "AgusSosEl1"
   },
-  "FIO": {
+  {
+    "name": "FIO",
     "email": "fbenvenutohaedo@gmail.com",
     "password": "fiore159,.,"
   },
-  "LUCAS": {
+  {
+    "name": "LUCAS",
     "email": "lucasgarciatejera@gmail.com",
-    "password": "lucasgarcia10,"
+    "password": "Ferrari812gts"
   }
-}
+]
