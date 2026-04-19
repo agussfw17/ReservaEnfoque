@@ -14,7 +14,12 @@ for (const user of weekUsers) {
 
 	const { id, token } = await login(user);
 
+	console.log('id', id);
+	console.log('token', token);
+
 	const activityCatId = await activityCategory(token);
+
+	console.log('activityCatId', activityCatId);
 
 	const dow = [1,3,5]; /*Lunes, Miércoles y Viernes*/
 
