@@ -10,7 +10,7 @@
     "password": "Bohemios6"
   },
   {
-    "name": "FARTO",  
+    "name": "FARTO",
     "email": "fartochristian@gmail.com",
     "password": "Christian90"
   },
@@ -43,5 +43,10 @@
     "name": "LUCAS",
     "email": "lucasgarciatejera@gmail.com",
     "password": "Ferrari812gts"
+  },
+  {
+    "name": "LUZ",
+    "email": "diego11luz@gmail.com",
+    "password": "MILIluz621"
   }
 ]
